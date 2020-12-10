@@ -7,11 +7,13 @@ keys.forEach(function(key){
 
 // Adding Some Life To Piano With Sound
 // B-Key
+// click function
 document.getElementById('b-key').addEventListener('click', function(){
   var audio = document.getElementById('audio-b');
   audio.currentTime = 0;
   audio.play();
 })
+// keyboard function
 document.body.addEventListener('keydown', function(event){
   var key = event.key
   var audio = document.getElementById('audio-b');
