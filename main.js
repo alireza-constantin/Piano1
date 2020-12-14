@@ -181,9 +181,25 @@ document.body.addEventListener('keypress', function(event){
 
 // Write named functions that change the color of the keys below
 const keyPlay = (event) => {
-  event.target.style.backgroundColor = 'lightblue'
+  // Modifing the text background problem
+  if (event.target.className === "keynote" || event.target.className === "black-keynote") {
+  event.target.parentElement.style.backgroundColor = 'lightblue'
+  } else {
+    event.target.style.backgroundColor = 'lightblue'
+  }
 }
 const keyReturn = (event) => {
+  if (event.target.className === "keynote" || event.target.className === "black-keynote" ) {
+    event.target.parentElement.style.backgroundColor = ''
+    } else {
+      event.target.style.backgroundColor = ''
+    }
+}
+
+const touchPlay = (event) => {
+  event.target.style.backgroundColor = 'lightblue'
+}
+const touchReturn = (event) => {
   event.target.style.backgroundColor = ''
 }
 
@@ -200,10 +216,10 @@ const mouse = (note) => {
 // Add changing Background for mobile version (touching) 
 const touch = (note) => {
   note.ontouchstart =() =>{
-     keyPlay(event);
+     touchPlay(event);
   }
   note.ontouchend =() => {
-    keyReturn(event);
+    touchReturn(event);
   }
 }
 // Write a loop that runs the array elements through the function
