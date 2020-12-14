@@ -113,3 +113,19 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
   }
+  @media only screen and (max-width:460px) {
+    #lyrics {
+      width: 80%;
+      height: 320px;
+      margin-bottom: 20%;
+    }
+    #column-one, #column-two, #column-three, #column-four, #column-five, #column-six, #column-optional {
+      width: 97px;
+    }
+    #first-next-line, #second-next-line, #third-next-line, #fourth-next-line {
+      position: relative;
+    }
+    #third-next-line {
+      bottom: 40px;
+    }
+  }

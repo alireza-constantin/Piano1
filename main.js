@@ -21,9 +21,7 @@ document.body.addEventListener('keydown', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("b-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.body.addEventListener('keyup', function(){
     document.getElementById("b-key").style.backgroundColor = ""
   })
@@ -42,8 +40,6 @@ document.body.addEventListener('keydown', function(event){
   audio.play();
   audio.currentTime = 0;
   document.getElementById("c-key").style.backgroundColor = "lightblue" 
-  } else {
-    preventDefault();
   }
   document.body.addEventListener('keyup', function() {
     document.getElementById('c-key').style.backgroundColor = "";
@@ -63,8 +59,6 @@ document.body.addEventListener('keydown', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("high-c-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
   }
   document.body.addEventListener('keyup', function(){
     document.getElementById("high-c-key").style.backgroundColor = ""
@@ -85,9 +79,7 @@ document.body.addEventListener('keydown', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("d-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.body.addEventListener('keyup',function() {
     document.getElementById("d-key").style.backgroundColor = ""
   })
@@ -106,9 +98,7 @@ document.body.addEventListener('keypress', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("e-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.body.addEventListener('keyup',function() {
     document.getElementById("e-key").style.backgroundColor = ""
   })
@@ -127,9 +117,7 @@ document.body.addEventListener('keypress', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("f-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.addEventListener('keyup',function() {
     document.getElementById("f-key").style.backgroundColor = ""
   })
@@ -149,9 +137,7 @@ document.body.addEventListener('keypress', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("a-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.body.addEventListener('keyup',function() {
     document.getElementById("a-key").style.backgroundColor = ""
   })
@@ -170,9 +156,7 @@ document.body.addEventListener('keypress', function(event){
   audio.currentTime = 0;
   audio.play();
   document.getElementById("g-key").style.backgroundColor = "lightblue"
-  } else {
-    preventDefault();
-  }
+  } 
   document.body.addEventListener('keyup',function() {
     document.getElementById("g-key").style.backgroundColor = ""
   })
